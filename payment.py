@@ -9,35 +9,6 @@ class Payment:
         self.net_price = 0
         self.amount_paid = 0
 
-    def calculate_discount(self):
-        """
-        Menghitung nilai diskon dari transaksi
-        """
-        discount = self.transaction.get_discount()
-        self.discount = discount
-
-    def calculate_net_price(self):
-        """
-        Menghitung total harga akhir setelah dikurangi diskon
-        """
-        self.calculate_discount()
-        total_price = self.transaction.total_price_after_discount()
-        self.net_price = total_price
-
-    def get_discount_amount(self):
-        """
-        Menghitung nilai diskon dalam rupiah
-        """
-        discount_amount = self.transaction.total_price() * self.discount
-        return discount_amount
-
-    def get_net_price(self):
-        """
-        Mendapatkan total harga akhir dari calculate_net_price
-        """
-        self.calculate_net_price()
-        return self.net_price
-
     def calculate_change(self, amount=None):
         """
         Menghitung nilai kembalian dari pembayaran dengan uang tunai
