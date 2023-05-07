@@ -19,6 +19,9 @@ c. Menghitung kembalian pembayaran (asumsi pembeli membayar dengan cash)
 4. Apabila sudah yakin dengan item dan akan melakukan pembayaran, dapat memilih nomor 7 dan sistem akan meminta kita memasukkan nominal
 5. Jika pembayaran berhasil, program akan mencetakn tanda terima yang berisi detail transaksi dan kembalian
 
+![Screenshot_7](https://user-images.githubusercontent.com/132833682/236687068-c3fe0b40-336c-4505-8a42-7bd073dab27e.jpg)
+
+
 ## Penjelasan fungsi/attribut
 
 Beberapa contoh fungsi:
